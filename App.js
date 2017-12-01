@@ -83,7 +83,6 @@ export default class App extends React.Component {
   }
   movieNameInputSubmitted() {
     // Make the TMDB API call, receive results. Leave the next two lines alone.
-    console.log("hello");
     let url = "http://api.themoviedb.org/3/search/movie?query=" + this.state.movieNameInput + "&api_key=8ad43d355fccbef40dc3527123bb25ff&language=en-US&page=1&include_adult=false";
     fetch(url).then(response => response.json()).then(json => {
       // console.log(json);
